@@ -1,3 +1,5 @@
+import HomeScreen from "./screens/HomeScreen";
+
 export default function App() {
-  return <div>Rostrum.</div>;
+  return <HomeScreen />;
 }

@@ -1,0 +1,27 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--color-bg);
+
+  display: flex;
+  flex-direction: column;
+
+  width: var(--sidebar-w);
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: var(--space-10);
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-row {
+  margin-top: auto;
+}
