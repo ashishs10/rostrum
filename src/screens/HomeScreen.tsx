@@ -18,9 +18,9 @@ export default function HomeScreen() {
 
       {/* USER ROW  */}
       <div className="user-row">
-        <div className="avatar"></div>
+        <div className="avatar">A</div>
         <div>
-          <div className="name">Ashish Singh</div>
+          <div className="user-name">Ashish Singh</div>
           <div className="goal">Public speaking</div>
         </div>
       </div>
