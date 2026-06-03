@@ -46,6 +46,7 @@
   padding: var(--space-2);
   border-radius: var(--radius-md);
   font-family: var(--font-body);
+  font-size: 14px;
   text-align: left;
   color: var(--color-text-sub);
   width: 100%;
@@ -75,7 +76,10 @@
 }
 
 .user-name {
-  font-size: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text);
+
   /* letter-spacing: 1px; */
 }
 

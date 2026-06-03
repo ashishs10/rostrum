@@ -20,7 +20,7 @@ export default function HomeScreen() {
       <div className="user-row">
         <div className="avatar">A</div>
         <div>
-          <div className="user-name">Ashish Singh</div>
+          <div className="user-name">Ashish</div>
           <div className="goal">Public speaking</div>
         </div>
       </div>
