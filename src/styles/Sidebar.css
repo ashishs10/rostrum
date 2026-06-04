@@ -45,9 +45,11 @@
 .nav-item {
   padding: var(--space-2);
   border-radius: var(--radius-md);
+
   font-family: var(--font-body);
   font-size: 14px;
   text-align: left;
+
   color: var(--color-text-sub);
   width: 100%;
   background: none;
