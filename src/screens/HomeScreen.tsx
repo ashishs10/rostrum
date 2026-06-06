@@ -2,7 +2,6 @@ import "../styles/Sidebar.css";
 import "../styles/main.css";
 
 export default function HomeScreen() {
-  const percentage: number = 65;
   return (
     <div className="page-layout">
       {/* SIDEBAR */}
@@ -127,41 +126,41 @@ export default function HomeScreen() {
             <p className="card-label">This week</p>
             <div className="chart-header">
               <p className="chart-big-num">
-                18 <span>m spoken</span>
+                18<span>m spoken</span>
               </p>
               <span>7-day view</span>
             </div>
             <div className="bars">
               <div className="bar-wrap">
-                <div className="bar" style={{ height: `${percentage}%` }}></div>
-                <span>M</span>
+                <div className="bar" style={{ height: `65%` }}></div>
+                <span className="bar-day">M</span>
               </div>
               <div className="bar-wrap">
-                <div className="bar"></div>
-                <span>T</span>
+                <div className="bar " style={{ height: `30%` }}></div>
+                <span className="bar-day">T</span>
               </div>
               <div className="bar-wrap">
-                <div className="bar"></div>
-                <span>W</span>
+                <div className="bar active" style={{ height: `80%` }}></div>
+                <span className="bar-day">W</span>
               </div>
               <div className="bar-wrap">
-                <div className="bar"></div>
-                <span>T</span>
+                <div className="bar" style={{ height: `55%` }}></div>
+                <span className="bar-day">T</span>
               </div>
               <div className="bar-wrap">
-                <div className="bar"></div>
-                <span>F</span>
+                <div className="bar" style={{ height: `90%%` }}></div>
+                <span className="bar-day">F</span>
               </div>
               <div className="bar-wrap">
-                <div className="bar"></div>
-                <span>S</span>
+                <div className="bar" style={{ height: `20%` }}></div>
+                <span className="bar-day">S</span>
               </div>
               <div className="bar-wrap">
-                <div className="bar"></div>
-                <span>S</span>
+                <div className="bar" style={{ height: `30%` }}></div>
+                <span className="bar-day">S</span>
               </div>
             </div>
-            <div className="char-divider"></div>
+            <div className="chart-divider"></div>
             <p className="score-trend">score trend</p>
             <div className="trend-row">
               <svg

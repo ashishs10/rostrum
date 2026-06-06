@@ -58,10 +58,12 @@
 }
 
 .label {
+  font-family: var(--font-body);
   font-size: 12px;
+  letter-spacing: 1px;
   color: var(--color-text-muted);
   text-transform: uppercase;
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 
 .big-number {
@@ -158,7 +160,6 @@
   color: var(--color-text-sub);
   padding: 7px 18px;
   border: 1.5px solid var(--color-border);
-  color: var(--color-text-sub);
   border-radius: var(--radius-full);
   border-color: var(--color-text-muted);
   background: transparent;
@@ -235,4 +236,99 @@
 
 .shuffle-btn:hover {
   color: var(--color-text-sub);
+}
+
+/* CHART CARD */
+.card-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.chart-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.chart-big-num {
+  font-family: var(--font-display);
+  font-size: 32px;
+}
+
+.chart-big-num span {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+.chart-header span {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-2);
+  height: 80px;
+  margin-bottom: var(--space-3);
+}
+
+.bar-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background: var(--color-primary-dim);
+  transition: background 0.15s;
+}
+.bar.active {
+  background: var(--color-primary);
+}
+
+.bar-day {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.chart-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-5) 0;
+}
+
+.score-trend {
+  font-family: var(--font-body);
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.trend-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.improving {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--color-green);
 }
