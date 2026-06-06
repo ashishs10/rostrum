@@ -48,18 +48,24 @@ export default function HomeScreen() {
           <div className="stat-card">
             <p className="label">total speeches</p>
             <h2 className="big-number">38</h2>
-            <p className="delta">&uarr;4 this week</p>
-          </div>
-          <div className="stat-card">
-            <p className="label">total speeches</p>
-            <h2 className="big-number">38</h2>
-            <p className="delta">&uarr;4 this week</p>
-          </div>
-          <div className="stat-card">
-            <p className="label">total speeches</p>
-            <h2 className="big-number">38</h2>
             <p className="subtext">speeches recorded</p>
-            <p className="delta">&uarr;4 this week</p>
+            <span className="delta-text">&uarr;4 this week</span>
+          </div>
+          <div className="stat-card">
+            <p className="label">Average Score</p>
+            <h2 className="big-number">
+              38<sup>/100</sup>
+            </h2>
+            <p className="subtext">across all sessions</p>
+            <span className="delta-text">&uarr; 3 pts from last week</span>
+          </div>
+          <div className="stat-card">
+            <p className="label">Practice Time</p>
+            <h2 className="big-number">
+              125<sup>m</sup>
+            </h2>
+            <p className="subtext">total minutes spoken</p>
+            <span className="delta-text">&uarr;4 this week</span>
           </div>
         </div>
       </div>
