@@ -2,6 +2,7 @@ import "../styles/Sidebar.css";
 import "../styles/main.css";
 
 export default function HomeScreen() {
+  const percentage: number = 65;
   return (
     <div className="page-layout">
       {/* SIDEBAR */}
@@ -28,8 +29,10 @@ export default function HomeScreen() {
           </div>
         </div>
       </div>
+
       {/* MAIN CONTENT */}
       <div className="main">
+        {/* TOP BAR */}
         <div className="top-bar">
           <div className="greeting">
             <h1 className="greeting-text">Good morning, Ashish!</h1>
@@ -44,6 +47,8 @@ export default function HomeScreen() {
           </div>
         </div>
         {/* REPLACE WITH REAL STAT DATA */}
+        {/* STATS ROW */}
+
         <div className="stat-cards">
           <div className="stat-card">
             <p className="label">total speeches</p>
@@ -66,6 +71,122 @@ export default function HomeScreen() {
             </h2>
             <p className="subtext">total minutes spoken</p>
             <span className="delta-text">&uarr;4 this week</span>
+          </div>
+        </div>
+
+        {/* MID-ROW */}
+        <div className="mid-row">
+          <div className="card">
+            <div className="prompt-badge">
+              <div className="prompt-dot"> </div> Today's Challenge
+            </div>
+            <p className="prompt-text">
+              "Describe a difficult decision you made and what you learned from
+              it."
+            </p>
+            <div className="dur-row">
+              <button className="dur-pill">30s</button>
+              <button className="dur-pill active">60s</button>
+              <button className="dur-pill">90s</button>
+            </div>
+            <button className="start-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8"
+                  stroke="white"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+              Start speaking
+            </button>
+            <button className="shuffle-btn">
+              <svg
+                width="11"
+                height="11"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="16 3 21 3 21 8"></polyline>
+                <line x1="4" y1="20" x2="21" y2="3"></line>
+                <polyline points="21 16 21 21 16 21"></polyline>
+                <line x1="15" y1="15" x2="21" y2="21"></line>
+              </svg>
+              Change Prompt
+            </button>
+          </div>
+          <div className="card chart-card">
+            <p className="card-label">This week</p>
+            <div className="chart-header">
+              <p className="chart-big-num">
+                18 <span>m spoken</span>
+              </p>
+              <span>7-day view</span>
+            </div>
+            <div className="bars">
+              <div className="bar-wrap">
+                <div className="bar" style={{ height: `${percentage}%` }}></div>
+                <span>M</span>
+              </div>
+              <div className="bar-wrap">
+                <div className="bar"></div>
+                <span>T</span>
+              </div>
+              <div className="bar-wrap">
+                <div className="bar"></div>
+                <span>W</span>
+              </div>
+              <div className="bar-wrap">
+                <div className="bar"></div>
+                <span>T</span>
+              </div>
+              <div className="bar-wrap">
+                <div className="bar"></div>
+                <span>F</span>
+              </div>
+              <div className="bar-wrap">
+                <div className="bar"></div>
+                <span>S</span>
+              </div>
+              <div className="bar-wrap">
+                <div className="bar"></div>
+                <span>S</span>
+              </div>
+            </div>
+            <div className="char-divider"></div>
+            <p className="score-trend">score trend</p>
+            <div className="trend-row">
+              <svg
+                width="100%"
+                height="32"
+                viewBox="0 0 200 32"
+                fill="none"
+                style={{ flex: 1 }}
+              >
+                <polyline
+                  points="0,28 30,22 60,25 90,14 120,16 150,7 180,10 200,5"
+                  stroke="#4F46E5"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></polyline>
+                <polyline
+                  points="0,28 30,22 60,25 90,14 120,16 150,7 180,10 200,5 200,32 0,32"
+                  fill="#4F46E5"
+                  opacity="0.06"
+                ></polyline>
+              </svg>
+              <span className="improving">&uarr; improving</span>
+            </div>
           </div>
         </div>
       </div>
