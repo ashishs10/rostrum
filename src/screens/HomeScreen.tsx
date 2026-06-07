@@ -148,7 +148,7 @@ export default function HomeScreen() {
                 <span className="bar-day">T</span>
               </div>
               <div className="bar-wrap">
-                <div className="bar" style={{ height: `90%%` }}></div>
+                <div className="bar" style={{ height: `100%` }}></div>
                 <span className="bar-day">F</span>
               </div>
               <div className="bar-wrap">
@@ -185,6 +185,56 @@ export default function HomeScreen() {
                 ></polyline>
               </svg>
               <span className="improving">&uarr; improving</span>
+            </div>
+          </div>
+        </div>
+
+        {/* ACHIEVEMENT SECTION */}
+        <div className="achievement-section card">
+          <div className="achievement-label  ">
+            <p className="label">achievement</p>
+            <span>2 of 6 unlocked</span>
+          </div>
+          <div className="achievement-cards">
+            <div className="achievement-card card">
+              <div className="achievement-icon">🎙️</div>
+              <p className="achievement-name">First Speech</p>
+              <p className="achievement-description">
+                Record your very first session
+              </p>
+              <span className="delta-text">Unlocked</span>
+            </div>
+            <div className="achievement-card card">
+              <div className="achievement-icon">🔥</div>
+              <p className="achievement-name">7 Day Streak</p>
+              <p className="achievement-description">Speak 7 days in a row</p>
+              <span className="delta-text">Unlocked</span>
+            </div>
+            <div className="achievement-card card locked">
+              <div className="achievement-icon">📅</div>
+              <p className="achievement-name">30 Day Streak</p>
+              <p className="achievement-description">
+                Speak every day for a month
+              </p>
+              <span className="delta-text">18 days left</span>
+            </div>
+            <div className="achievement-card card locked">
+              <div className="achievement-icon">💯</div>
+              <p className="achievement-name">100 Speeches</p>
+              <p className="achievement-description">Record 100 sessions</p>
+              <span className="delta-text">total 62 to go</span>
+            </div>
+            <div className="achievement-card card locked">
+              <div className="achievement-icon">⭐</div>
+              <p className="achievement-name">Score 95+</p>
+              <p className="achievement-description">Hit a score above 95</p>
+              <span className="delta-text">Best: 91</span>
+            </div>
+            <div className="achievement-card card locked">
+              <div className="achievement-icon">🏆</div>
+              <p className="achievement-name">Perfect Week</p>
+              <p className="achievement-description">Average 90+ for 7 days</p>
+              <span className="delta-text">Locked</span>
             </div>
           </div>
         </div>
