@@ -39,6 +39,7 @@
 .nav-items {
   display: flex;
   flex-direction: column;
+  /* justify-content: baseline; */
   gap: var(--space-1);
 }
 
@@ -50,11 +51,26 @@
   font-size: 14px;
   text-align: left;
 
+  display: flex;
+  gap: var(--space-1);
+
+  /* align-items: baseline; */
+  justify-content: baseline;
+
   color: var(--color-text-sub);
   width: 100%;
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.nav-item:hover {
+  background: var(--color-bg);
+  color: var(--color-text-sub);
+}
+.nav-item.active {
+  background: var(--color-primary-dim);
+  color: var(--color-primary);
 }
 
 .user-row {

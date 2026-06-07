@@ -13,10 +13,75 @@ export default function HomeScreen() {
         </div>
         {/* NAV ITEMS */}
         <div className="nav-items">
-          <button className="nav-item">Home</button>
-          <button className="nav-item">Practice</button>
-          <button className="nav-item">Progress</button>
-          <button className="nav-item">History</button>
+          <button className="nav-item active">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#4F46E5"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                fill="#4F46E5"
+                opacity="0.15"
+              ></path>
+              <polyline
+                points="9 22 9 12 15 12 15 22"
+                stroke="#4F46E5"
+              ></polyline>
+            </svg>
+            Home
+          </button>
+          <button className="nav-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            >
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8"></path>
+            </svg>
+            Practice
+          </button>
+          <button className="nav-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            Progress
+          </button>
+          <button className="nav-item">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            History
+          </button>
         </div>
 
         {/* USER ROW  */}
